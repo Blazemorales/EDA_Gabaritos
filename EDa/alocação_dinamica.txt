@@ -1,0 +1,32 @@
+Divisão de memória:
+
+    Memória alta: 
+        Heap - Disponível pra alocação dinâmica
+        segmento de pilha - variáveis locais
+        Segmento de dados - variávelis globais
+    Memória baixa:
+        Segmento de código n
+        .
+        .
+        .
+        Segmento de código 1
+
+Porque devo saber disso? 
+Se você quiser mexer com memória e desenvolver no setor de cibersegurança, é preciso para enxergar vestígios ou possíveis erros  
+    Vantagem: Você controla o uso de memória (enxuto)
+    Cuidado: Cuidar de lixos/ruidos
+    Implementação em C/C++: Via ponteiros, funções e operadores e desalocação
+
+C: 
+    Malloc:
+        void* malloc (side t_qntd):
+            qntd: quantidade de bytes a serem alocados
+        Como uso?
+            tipo de dado *nome = (tipo de dado*) malloc (sizeof(tipo de dado)* tamanho);
+    Calloc:
+        void *calloc(size_t qntd, size t_tamanho);
+        tipo de dado * nome = (tipo de dado *) calloc (tamanho, sizeof(tipo de dado);
+    Free: void free(void* ptr);
+
+    malloc e calloc são arranjados via <stdlib.h>
+
